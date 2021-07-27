@@ -150,6 +150,7 @@ public class ArticleController extends Controller {
 					startArticleIndex=(currentPageNo-1)*unitArticle;
 					endArticleIndex=startArticleIndex+2;
 					
+					currentPageBlock=(int)Math.ceil((double)currentPageNo/unitPageBlock);
 					startPageNum=unitPageBlock*(currentPageBlock-1)+1;
 					endPageNum=unitPageBlock*(currentPageBlock);
 					
@@ -202,6 +203,7 @@ public class ArticleController extends Controller {
 					startArticleIndex=(currentPageNo-1)*unitArticle;
 					endArticleIndex=startArticleIndex+2;
 					
+					currentPageBlock=(int)Math.ceil((double)currentPageNo/unitPageBlock);
 					startPageNum=unitPageBlock*(currentPageBlock-1)+1;
 					endPageNum=unitPageBlock*(currentPageBlock);
 					
@@ -264,6 +266,7 @@ public class ArticleController extends Controller {
 				startArticleIndex=(currentPageNo-1)*unitArticle;
 				endArticleIndex=startArticleIndex+2;
 				
+				currentPageBlock=(int)Math.ceil((double)currentPageNo/unitPageBlock);
 				startPageNum=unitPageBlock*(currentPageBlock-1)+1;
 				endPageNum=unitPageBlock*(currentPageBlock);
 				
@@ -323,6 +326,7 @@ public class ArticleController extends Controller {
 
 
 	}
+
 
 
 
