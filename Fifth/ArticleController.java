@@ -1,6 +1,6 @@
 package Fifth;
 
-import java.text.SimpleDateFormat;  
+import java.text.SimpleDateFormat;   
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
@@ -15,7 +15,7 @@ public class ArticleController extends Controller {
 	ArrayList<Comment> comments=new ArrayList<Comment>();
 	ArrayList<Liking> likes=new ArrayList<Liking>();
 	private int LastId;
-
+	
 
 
 	public void doCommand(String cmd) {
@@ -102,6 +102,7 @@ public class ArticleController extends Controller {
 			System.out.println("등록날짜: " + articles.get(i).getRegDate());
 			System.out.println("조회수 : " + articles.get(i).getHit());
 			System.out.println("작성자 : " + articles.get(i).getWriter());
+			System.out.println("좋아요 수: "+getLikeNum(articles.get(i).getArticleId()));
 			System.out.println("===========================");
 
 
@@ -162,6 +163,7 @@ public class ArticleController extends Controller {
 						System.out.println("등록날짜: " + articles.get(i).getRegDate());
 						System.out.println("조회수 : " + articles.get(i).getHit());
 						System.out.println("작성자 : " + articles.get(i).getWriter());
+						System.out.println("좋아요 수: "+getLikeNum(articles.get(i).getArticleId()));
 						System.out.println("===========================");
 						for(int j=0;j<comments.size();j++) {
 
@@ -219,6 +221,7 @@ public class ArticleController extends Controller {
 						System.out.println("등록날짜: " + articles.get(i).getRegDate());
 						System.out.println("조회수 : " + articles.get(i).getHit());
 						System.out.println("작성자 : " + articles.get(i).getWriter());
+						System.out.println("좋아요 수: "+getLikeNum(articles.get(i).getArticleId()));
 						System.out.println("===========================");
 						for(int j=0;j<comments.size();j++) {
 
@@ -283,6 +286,7 @@ public class ArticleController extends Controller {
 					System.out.println("등록날짜: " + articles.get(i).getRegDate());
 					System.out.println("조회수 : " + articles.get(i).getHit());
 					System.out.println("작성자 : " + articles.get(i).getWriter());
+					System.out.println("좋아요 수: "+getLikeNum(articles.get(i).getArticleId()));
 					System.out.println("===========================");
 					for(int j=0;j<comments.size();j++) {
 
@@ -326,7 +330,6 @@ public class ArticleController extends Controller {
 
 
 	}
-
 
 
 
@@ -534,6 +537,7 @@ public class ArticleController extends Controller {
 			System.out.println("등록날짜: " + articles.get(i).getRegDate());
 			System.out.println("조회수 : " + articles.get(i).getHit());
 			System.out.println("작성자 : " + articles.get(i).getWriter());
+			System.out.println("좋아요 수: "+getLikeNum(articles.get(i).getArticleId()));
 			System.out.println("===========================");
 
 
